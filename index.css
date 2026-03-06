@@ -17,6 +17,7 @@
   }
 
   button{
+    display: block;
     color: #016f32;
-    margin-bottom: 2px;
+    margin: 0 auto 10px auto;
   }
