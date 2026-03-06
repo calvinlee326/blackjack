@@ -21,3 +21,47 @@
     color: #016f32;
     margin: 0 auto 10px auto;
   }
+
+  #cards-el {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .card {
+    width: 70px;
+    height: 100px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    position: relative;
+  }
+
+  .card.red {
+    color: red;
+  }
+
+  .card-top {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .card-suit {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .card-bottom {
+    text-align: right;
+    font-size: 14px;
+    transform: rotate(180deg);
+  }
