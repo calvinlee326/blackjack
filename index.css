@@ -1,0 +1,17 @@
+  body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to right, pink, lightblue);
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  h1{
+    color: goldenrod;
+  }
+
+  #message-el{
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+  }
