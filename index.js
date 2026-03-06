@@ -30,6 +30,17 @@ function startGame() {
 }
 function newCard() {
     console.log("Drawing a new card from the deck!");
+    let card = Math.ceil(Math.random() * 11);
+    sum += card;
+    cardsEL.textContent = "Cards: " + firstCard + " " + secondCard + " " + card;
+    sumEL.textContent = "Sum: " + sum;
+    if (sum < 21) {
+        console.log("Do you want to draw a new card?");
+    } else if (sum === 21) {
+        console.log("You've got Blackjack!");
+    } else if (sum > 21) {
+        console.log("You're out of the game!");
+    }
 }
 
  
