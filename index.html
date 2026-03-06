@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackjack Game</title>
+    <title>Blackjack</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Blackjack Game</h1>
-    <p id="message-el">Want to play a round?</p>
-    <p>Your cards: <span id="cards-el"></span></p>
-    <p>Sum: <span id="sum-el"></span></p>
-    <button onclick="startGame()">Start Game</button>
-    <button onclick="newCard()">New Card</button>
+
+    <div class="casino-header">
+        <h1>♠ BLACKJACK ♥</h1>
+        <p class="tagline">DEALER MUST STAND ON 17</p>
+    </div>
+
+    <div class="table">
+        <p class="table-label">BLACKJACK PAYS 3 TO 2</p>
+
+        <div class="player-section">
+            <p class="section-label">YOUR HAND</p>
+            <div id="cards-el" class="cards-area"></div>
+            <div class="score-box">Total: <span id="sum-el">—</span></div>
+        </div>
+
+        <div id="message-el" class="message">Place your bet and deal!</div>
+    </div>
+
+    <div class="actions">
+        <button class="btn-deal" onclick="startGame()">DEAL</button>
+        <button class="btn-hit" onclick="newCard()">HIT</button>
+    </div>
+
     <script src="index.js"></script>
-</body> 
+</body>
 </html>
